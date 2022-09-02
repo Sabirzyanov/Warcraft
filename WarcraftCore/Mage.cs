@@ -28,7 +28,8 @@ public class Mage : Range
         // 1 - FireBall
         // 2 - Blizzard
         // 3 - Base attack
-        int attackType = rand.Next(1, 3);
+        int attackType = rand.Next(1, 5);
+        int healPoint = rand.Next(10, 20);
         switch (attackType)
         {
             case 1:
@@ -39,6 +40,9 @@ public class Mage : Range
                 break;
             case 3:
                 base.Attack(target);
+                break;
+            case 4:
+                Heal(healPoint);
                 break;
         }
         base.Attack(target);
@@ -62,11 +66,11 @@ public class Mage : Range
         mana -= BLIZZARD_MANA_COST;
     }
     
-    public void Heal(Unit target, int healPoint)
+    public void Heal(int healPoint)
     {
         if (mana >= HEAL_MANA_COST && !isDestroyed)
         {
-            target.SetHealthPoint(healPoint);
+            this.SetHealthPoint(healPoint);
             mana -= HEAL_MANA_COST * healPoint;
         }
     }
