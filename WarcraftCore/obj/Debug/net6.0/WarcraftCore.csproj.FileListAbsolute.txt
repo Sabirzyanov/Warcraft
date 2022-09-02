@@ -1,0 +1,12 @@
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.csproj.AssemblyReference.cache
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.AssemblyInfoInputs.cache
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.AssemblyInfo.cs
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.csproj.CoreCompileInputs.cache
+C:\Programming\C#\Warcraft\WarcraftCore\bin\Debug\net6.0\WarcraftCore.deps.json
+C:\Programming\C#\Warcraft\WarcraftCore\bin\Debug\net6.0\WarcraftCore.dll
+C:\Programming\C#\Warcraft\WarcraftCore\bin\Debug\net6.0\WarcraftCore.pdb
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.dll
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\refint\WarcraftCore.dll
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\WarcraftCore.pdb
+C:\Programming\C#\Warcraft\WarcraftCore\obj\Debug\net6.0\ref\WarcraftCore.dll

@@ -1,0 +1,5 @@
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.csproj.AssemblyReference.cache
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.AssemblyInfoInputs.cache
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.AssemblyInfo.cs
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.csproj.CoreCompileInputs.cache
