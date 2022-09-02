@@ -4,11 +4,11 @@ public class GuardTower : Unit
 {
     protected int range;
     protected int damage;
-    protected double attackSpeed;
+    protected int attackSpeed;
 
-    public GuardTower(int health, int maxHealth, string name, int cost, 
-        int level, int range, int damage, double attackSpeed) : 
-        base(health, maxHealth, name, cost, level)
+    public GuardTower(int health, string name, int cost, 
+        int level, int range, int damage, int attackSpeed) : 
+        base(health, name, cost, level)
     {
         this.range = range;
         this.damage = damage;
@@ -21,5 +21,10 @@ public class GuardTower : Unit
             return;
         
         target.GetHit(damage);
+    }
+    
+    public int GetAttackSpeed()
+    {
+        return attackSpeed;
     }
 }

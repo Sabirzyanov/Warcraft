@@ -3,3 +3,16 @@ C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.Gene
 C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.AssemblyInfoInputs.cache
 C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.AssemblyInfo.cs
 C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.csproj.CoreCompileInputs.cache
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftConsole.exe
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftConsole.deps.json
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftConsole.runtimeconfig.json
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftConsole.dll
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftConsole.pdb
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftCore.dll
+C:\Programming\C#\Warcraft\WarcraftConsole\bin\Debug\net6.0\WarcraftCore.pdb
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.csproj.CopyComplete
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.dll
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\refint\WarcraftConsole.dll
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.pdb
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\WarcraftConsole.genruntimeconfig.cache
+C:\Programming\C#\Warcraft\WarcraftConsole\obj\Debug\net6.0\ref\WarcraftConsole.dll

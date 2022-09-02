@@ -7,13 +7,14 @@ public abstract class Unit
     protected string name;
     protected int cost;
     protected int level;
-    
+
+    protected bool stunned;
     protected bool isDestroyed;
 
-    protected Unit(int health, int maxHealth, string name, int cost, int level)
+    protected Unit(int health, string name, int cost, int level)
     {
         this.health = health;
-        this.maxHealth = maxHealth;
+        this.maxHealth = health;
         this.name = name;
         this.cost = cost;
         this.level = level;
@@ -21,11 +22,9 @@ public abstract class Unit
 
     public virtual void GetHit(int damage)
     {
-        if (health > 0)
-        {
-            health -= damage;
-        }
-        else
+        health -= damage;
+        
+        if (health <= 0)
         {
             Destroy();
         }
@@ -55,5 +54,15 @@ public abstract class Unit
     public bool IsDestroyed()
     {
         return isDestroyed;
+    }
+
+    public string GetName()
+    {
+        return name;
+    }
+
+    public void GetStunned()
+    {
+        stunned = true;
     }
 }

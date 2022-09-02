@@ -2,8 +2,8 @@ namespace WarcraftCore;
 
 public class Peasant : Moveable
 {
-    public Peasant(int health, int maxHealth, string name, int cost, int level, int moveSpeed) : 
-        base(health, maxHealth, name, cost, level, moveSpeed)
+    public Peasant(int health, string name, int cost, int level, int moveSpeed) : 
+        base(health, name, cost, level, moveSpeed)
     {
     }
 

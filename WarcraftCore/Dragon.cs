@@ -2,9 +2,9 @@ namespace WarcraftCore;
 
 public class Dragon : Range
 {
-    public Dragon(int health, int maxHealth, string name, int cost, int level, int moveSpeed, 
+    public Dragon(int health, string name, int cost, int level, int moveSpeed, 
         int damage, int attackSpeed, int armor, int range, int mana) : 
-        base(health, maxHealth, name, cost, level, moveSpeed, damage, attackSpeed, armor, range, mana)
+        base(health, name, cost, level, moveSpeed, damage, attackSpeed, armor, range, mana)
     {
     }
 
