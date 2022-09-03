@@ -4,7 +4,7 @@ public class Mage : Range
 {
     private const int HEAL_MANA_COST = 6;
     
-    private const int FIREBALL_DAMAGE_MULTIPLIER = 3;
+    private const int FIREBALL_DAMAGE_MULTIPLIER = 4;
     private const int FIREBALL_MANA_COST = 15;
     
     private const int BLIZZARD_DAMAGE_MULTIPLIER = 2;
@@ -13,14 +13,9 @@ public class Mage : Range
     private Random rand = new Random();
     
     public Mage(int health, string name, int cost, int level, 
-        int moveSpeed, int damage, int attackSpeed, int armor, int range, int mana) : 
-        base(health, name, cost, level, moveSpeed, damage, attackSpeed, armor, range, mana)
+        int moveSpeed, int damage, int attackSpeed, int armor, int range, int mana, ILogger logger) : 
+        base(health, name, cost, level, moveSpeed, damage, attackSpeed, armor, range, mana, logger)
     {
-    }
-
-    public override void Move()
-    {
-        throw new NotImplementedException();
     }
 
     public override void Attack(Unit target)
@@ -28,8 +23,12 @@ public class Mage : Range
         // 1 - FireBall
         // 2 - Blizzard
         // 3 - Base attack
+        // 4 - Heal
+        
         int attackType = rand.Next(1, 5);
+        
         int healPoint = rand.Next(10, 20);
+        
         switch (attackType)
         {
             case 1:
@@ -45,7 +44,6 @@ public class Mage : Range
                 Heal(healPoint);
                 break;
         }
-        base.Attack(target);
     }
 
     public void FireBall(Unit target)
@@ -55,6 +53,7 @@ public class Mage : Range
         
         target.GetHit(FIREBALL_DAMAGE_MULTIPLIER * damage);
         mana -= FIREBALL_MANA_COST;
+        logger.Log($"{GetName()} кинул фаербол в {target.GetName()} в {FIREBALL_DAMAGE_MULTIPLIER * damage} урона");
     }
 
     public void Blizzard(Unit target)
@@ -64,14 +63,18 @@ public class Mage : Range
         
         target.GetHit(BLIZZARD_DAMAGE_MULTIPLIER * damage);
         mana -= BLIZZARD_MANA_COST;
+        logger.Log($"{GetName()} кинул молнию в {target.GetName()} в {BLIZZARD_DAMAGE_MULTIPLIER * damage} урона");
+
     }
     
     public void Heal(int healPoint)
     {
         if (mana >= HEAL_MANA_COST && !isDestroyed)
         {
-            this.SetHealthPoint(healPoint);
+            SetHealthPoint(healPoint);
             mana -= HEAL_MANA_COST * healPoint;
+            logger.Log($"{GetName()} вылечил себя на {healPoint} единиц");
+
         }
     }
 }

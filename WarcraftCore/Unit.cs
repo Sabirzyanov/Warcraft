@@ -8,7 +8,7 @@ public abstract class Unit
     protected int cost;
     protected int level;
 
-    protected bool stunned;
+    protected bool isStunned;
     protected bool isDestroyed;
 
     protected Unit(int health, string name, int cost, int level)
@@ -63,6 +63,6 @@ public abstract class Unit
 
     public void GetStunned()
     {
-        stunned = true;
+        isStunned = true;
     }
 }

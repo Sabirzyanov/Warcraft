@@ -2,15 +2,11 @@ namespace WarcraftCore;
 
 public class Footman : Millitary
 {
-    Random rand = new Random();
+    Random rand = new();
     public Footman(int health, string name, int cost, int level, int moveSpeed, int damage, 
-        int attackSpeed, int armor) : base(health, name, cost, level, moveSpeed, damage, attackSpeed, armor)
+        int attackSpeed, int armor, ILogger logger) : 
+        base(health, name, cost, level, moveSpeed, damage, attackSpeed, armor, logger)
     {
-    }
-
-    public override void Move()
-    {
-        throw new NotImplementedException();
     }
 
     public override void GetHit(int damage)
@@ -32,6 +28,7 @@ public class Footman : Millitary
         if (isDestroyed)
             return;
         attackSpeed *= 2;
+        logger.Log($"{GetName()} включил режим берсерка");
     }
 
     public void Stun(Unit target)
@@ -42,6 +39,12 @@ public class Footman : Millitary
         if (stunChance == 1)
         {
             target.GetStunned();
+            logger.Log($"{GetName()} застанил {target.GetName()}");
         }
+    }
+
+    public void UpgradeArmor(int upgradeValue)
+    {
+        armor += upgradeValue;
     }
 }
